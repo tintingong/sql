@@ -46,20 +46,21 @@ There are several tools online you can use, I'd recommend [Draw.io](https://www.
 **HINT:** You do not need to create any data for this prompt. This is a conceptual model only. 
 
 
-![alt text](image.png)
 
 
+
+![alt text](<Sql_assignment 2_ sec 1_01.png>)
 
 
 
 #### Prompt 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
 
-![alt text](image-1.png)
 
 
 
 
+![alt text](<Sql_assignment 2_ sec 1_02.png>)
 
 
 
@@ -68,17 +69,14 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
+If the customer want to keep customer address, we can consider create a new address table and make a join to  customer table . It is because one customer may have more than one address.
 
-Type 1  - to retain changes - to create a history table for customer address table
+Type 1 SDS (Slowly Changing Dimensions) is to overwrites existing data with new data, and does not retain history. 
 
-Type 2 - to overwrite changes - 
-
-
+Type 2 is addding a new row for new data, while retaining the existing row for historical and reporting purposes. 
 
 
-```
-Your answer...
-```
+
 
 ***
 
