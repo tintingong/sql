@@ -23,7 +23,7 @@ If you encounter any difficulties or have questions, please don't hesitate to re
 
 ***
 
-## Section 1:
+## Section 1: -- testing to upload again 2
 You can start this section following *session 1*, but you may want to wait until you feel comfortable wtih basic SQL query writing. 
 
 Steps to complete this part of the assignment:
@@ -45,17 +45,38 @@ There are several tools online you can use, I'd recommend [Draw.io](https://www.
 
 **HINT:** You do not need to create any data for this prompt. This is a conceptual model only. 
 
+
+
+
+
+![alt text](<Sql_assignment 2_ sec 1_01.png>)
+
+
+
 #### Prompt 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+
+
+
+
+
+![alt text](<Sql_assignment 2_ sec 1_02.png>)
+
+
 
 #### Prompt 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2? 
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
-```
-Your answer...
-```
+If the customer want to keep customer address, we can consider create a new address table and make a join to  customer table . It is because one customer may have more than one address.
+
+Type 1 SDS (Slowly Changing Dimensions) is to overwrites existing data with new data, and does not retain history. 
+
+Type 2 is addding a new row for new data, while retaining the existing row for historical and reporting purposes. 
+
+
+
 
 ***
 
