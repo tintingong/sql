@@ -23,7 +23,7 @@ If you encounter any difficulties or have questions, please don't hesitate to re
 
 ***
 
-## Section 1: -- testing to upload again
+## Section 1: -- testing to upload again 2
 You can start this section following *session 1*, but you may want to wait until you feel comfortable wtih basic SQL query writing. 
 
 Steps to complete this part of the assignment:
